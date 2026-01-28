@@ -1,0 +1,97 @@
+# TOMMY REYNOLDS — CURSOR RULES
+# This file auto-loads in Cursor. It defines the project context.
+
+## PROJECT OVERVIEW
+
+Client: Tommy Reynolds
+Site: Personal brand + coaching landing pages
+Core Line: "I build the protocol. You just clock in."
+Status: Active build — implementing new copy
+
+## THE BRAND
+
+Tommy is a fitness authority (20 years, 8 gyms, $20M) who helps:
+1. TRAINERS build profitable businesses → "The Wealth Protocol"
+2. EXECUTIVES build sustainable fitness → "The Executive Protocol"
+
+The positioning: System over motivation. Protocol over willpower.
+The feeling: Relief. Not hype. "Finally, someone just tells me what to do."
+
+## SITE STRUCTURE
+
+```
+Homepage (/)
+├── Hero: "I build the protocol. You just clock in."
+├── The Gap: "Exceptional at one thing, falling apart at another"
+├── Story teaser: 2008
+├── The Fork: [Your Business] [Your Body]
+└── CTA
+
+/story — Full narrative (3 chapters)
+/business — The Wealth Protocol (for trainers)
+/body — The Executive Protocol (for executives)
+```
+
+NAV: [My Story] [Your Business] [Your Body] ... [Let's Talk]
+
+## VISUAL SYSTEM
+
+```
+Colors (from index.css):
+- Primary (Warm Stone): #2C2825
+- Background (Bone): #F5F2ED  
+- Accent (Ember): #D4572A — CTAs and highlights only
+- Text (Charcoal): #1A1815
+- Secondary (Sand): #E8E0D5
+
+Typography:
+- Headlines: Playfair Display (serif)
+- Body: Inter (sans-serif)
+- All corners: border-radius: 0 (sharp)
+
+Signature element: The Period
+- Accent-colored period at end of headlines
+- Class: .signature-period or <span className="text-accent">.</span>
+```
+
+## KEY FILES
+
+```
+Copy source (IMPLEMENT THIS):
+../SITE-COPY-FINAL.md — All website copy, locked
+
+Code files to update:
+/client/src/pages/home.tsx
+/client/src/pages/story.tsx
+/client/src/pages/business.tsx
+/client/src/pages/body.tsx
+
+Styles:
+/client/src/index.css — Theme variables
+/client/src/styles/ — Additional styles
+```
+
+## RULES
+
+1. READ SITE-COPY-FINAL.md before making changes
+2. Match copy EXACTLY — it's been through deep research
+3. Keep the visual system consistent (colors, fonts, sharp corners)
+4. The accent color (Ember) is for CTAs and periods ONLY
+5. No decorative gimmicks — the edge is in the copy
+6. Everything funnels to Calendly (Let's Talk)
+7. Mobile-first — must work flawlessly on phone
+
+## DO NOT
+
+- Add animated text sequences or techy overlays
+- Change the core line without discussion
+- Put pricing on the site
+- Use rounded corners anywhere
+- Overuse the accent color
+- Add features not in the copy doc
+
+## THE JOB
+
+Make people believe Tommy is the real deal.
+Get them to book a call.
+That's it.

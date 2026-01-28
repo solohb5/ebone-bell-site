@@ -1,0 +1,15 @@
+{
+  "model": "sonnet",
+  "permissions": {
+    "allow": [
+      "Read",
+      "Write",
+      "Edit",
+      "Bash",
+      "Grep",
+      "Glob"
+    ]
+  },
+  "autoCompact": true,
+  "compactThreshold": 80
+}

@@ -1,0 +1,32 @@
+# Don't upload these to Vercel (speeds up deployment)
+node_modules
+dist
+.git
+.DS_Store
+*.log
+
+# Local config files
+.env.local
+CLAUDE.local.md
+.claude/settings.local.json
+
+# Documentation (not needed for build)
+docs/
+00-START-HERE.md
+01-FOCUS-TODAY.md
+02-BIG-PICTURE.md
+03-IDEA-PARKING.md
+AGENTS.md
+CLAUDE.md
+CROSS-SYSTEM-PROTOCOL.md
+QUICK-REF.md
+UPGRADE-SUMMARY.md
+
+# Development files (keep config files for build)
+.replit
+server/
+script/
+shared/
+drizzle.config.ts
+components.json
+Tommy-Reynolds-IDE.code-workspace

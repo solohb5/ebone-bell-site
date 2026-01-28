@@ -1,0 +1,16 @@
+<svg width="180" height="48" viewBox="0 0 180 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- EBONÉ (Magenta) -->
+  <text x="0" y="32" font-family="Playfair Display, serif" font-size="32" font-weight="600" fill="#D93E7A" letter-spacing="-0.02em">
+    EBONÉ
+  </text>
+
+  <!-- F. (Gold accent) -->
+  <text x="100" y="32" font-family="Playfair Display, serif" font-size="32" font-weight="600" fill="#C9A227" letter-spacing="-0.02em">
+    F.
+  </text>
+
+  <!-- BELL (Magenta) -->
+  <text x="124" y="32" font-family="Playfair Display, serif" font-size="32" font-weight="600" fill="#D93E7A" letter-spacing="-0.02em">
+    BELL
+  </text>
+</svg>

@@ -1,0 +1,62 @@
+{
+  "mcpServers": {
+    "firecrawl": {
+      "command": "npx",
+      "args": ["-y", "firecrawl-mcp"],
+      "env": {
+        "FIRECRAWL_API_KEY": "${FIRECRAWL_API_KEY}"
+      }
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_TOKEN": "${GITHUB_TOKEN}"
+      }
+    },
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@context7/mcp-server"]
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-sequential-thinking"]
+    },
+    "brave-search": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-brave-search"],
+      "env": {
+        "BRAVE_API_KEY": "${BRAVE_API_KEY}"
+      }
+    }
+  },
+  "_comments": {
+    "overview": "Optimized MCP config - Essential 5 only, no bloat",
+    "why_this_config": "Lean, focused, high-value tools for Claude Code",
+    "claude_code_note": "Claude Code has excellent built-in file/terminal access - no need for desktop-commander",
+    "essential_5": {
+      "firecrawl": "🔥 CRITICAL - Web scraping & content extraction (requires API key)",
+      "github": "🐙 CRITICAL - Git automation & PR creation (requires token)",
+      "context7": "📚 HIGH VALUE - Current API docs, prevents hallucination",
+      "sequential-thinking": "🧠 HIGH VALUE - Complex reasoning & planning",
+      "brave-search": "🔍 HIGH VALUE - Real-time web search (requires API key)"
+    },
+    "optional_add_later": {
+      "puppeteer": "Browser automation for E2E testing - npx -y @modelcontextprotocol/server-puppeteer",
+      "sub-agents": "Specialized sub-agents - npx -y sub-agents-mcp",
+      "desktop-commander": "File system access (NOT needed in Claude Code, redundant bloat)"
+    },
+    "api_keys_required": [
+      "FIRECRAWL_API_KEY - Get free tier at https://firecrawl.dev (500 credits/mo)",
+      "GITHUB_TOKEN - Generate at https://github.com/settings/tokens",
+      "BRAVE_API_KEY - Get free tier at https://brave.com/search/api (2,000 queries/mo)"
+    ],
+    "setup_instructions": [
+      "1. Copy env.template to .env (in Claude Code: ~/.config/claude/.env)",
+      "2. Add your API keys to .env",
+      "3. Start Claude Code: claude",
+      "4. MCPs load automatically",
+      "5. See MCP-GUIDE.md for usage examples"
+    ]
+  }
+}

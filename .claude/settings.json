@@ -1,0 +1,64 @@
+{
+  "project": {
+    "name": "Eboné F. Bell Website",
+    "type": "web",
+    "description": "Personal brand site for keynote speaker and movement builder inspiring allyship, belonging, and leadership"
+  },
+  "agents": {
+    "enabled": true,
+    "auto_invoke": true,
+    "available": [
+      {
+        "name": "architect",
+        "path": "agents/architect.md",
+        "triggers": ["planning", "architecture", "design", "refactor", "structure"]
+      },
+      {
+        "name": "debugger",
+        "path": "agents/debugger.md",
+        "triggers": ["bug", "error", "broken", "not working", "debug", "fix"]
+      },
+      {
+        "name": "reviewer",
+        "path": "agents/reviewer.md",
+        "triggers": ["review", "check", "quality", "ship", "pre-flight", "deploy"]
+      }
+    ]
+  },
+  "skills": {
+    "enabled": true,
+    "auto_invoke": true,
+    "directory": "skills/"
+  },
+  "commands": {
+    "enabled": true,
+    "custom": [
+      {
+        "name": "/ship",
+        "path": "commands/ship.md",
+        "description": "Pre-flight checklist before deploying"
+      },
+      {
+        "name": "/unleash",
+        "path": "commands/unleash.md",
+        "description": "Activate full autonomy mode"
+      }
+    ]
+  },
+  "context": {
+    "always_load": [
+      "../CLAUDE.md",
+      "../01-FOCUS-TODAY.md"
+    ],
+    "load_on_demand": [
+      "../02-BIG-PICTURE.md",
+      "../docs/VISUAL-SYSTEM.md",
+      "../docs/COPY-REFERENCE.md"
+    ]
+  },
+  "preferences": {
+    "thinking_mode": "auto",
+    "default_model": "sonnet",
+    "compact_threshold": 0.8
+  }
+}
