@@ -413,7 +413,7 @@ export default function Home() {
           </motion.h2>
 
           <motion.p variants={fadeIn} className="text-lg md:text-xl text-foreground/60 mb-12 max-w-2xl leading-[1.6]">
-            Eboné is booking keynotes, workshops, and facilitated sessions for 2025.
+            Eboné is booking keynotes, workshops, and facilitated sessions for 2026.
           </motion.p>
 
           <motion.div variants={fadeIn} className="flex flex-col sm:flex-row items-start gap-7">

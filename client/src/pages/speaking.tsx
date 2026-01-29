@@ -52,8 +52,8 @@ const additionalTopics = [
   "Custom Engagements & Projects"
 ];
 
-// 2025 speaking engagements (from her actual site)
-const speakingCalendar2025 = [
+// 2026 speaking engagements
+const speakingCalendar2026 = [
   "WorldPride 2025: Human Rights Conference",
   "Annual CIVSA Conference",
   "Vanderbilt University",
@@ -345,7 +345,7 @@ export default function Speaking() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════
-          2025 CALENDAR
+          2026 CALENDAR
       ═══════════════════════════════════════════════════════════════ */}
       <section className="py-20 md:py-32 px-6 md:px-20 lg:px-32 bg-secondary text-secondary-foreground">
         <motion.div
@@ -357,7 +357,7 @@ export default function Speaking() {
         >
           <motion.div variants={fadeIn} className="text-center mb-16">
             <span className="text-accent text-xs tracking-[0.3em] font-medium uppercase">
-              2025 Speaking Calendar
+              2026 Speaking Calendar
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif mt-4 leading-[1.05]">
               Where I'll be this year<span className="text-primary">.</span>
@@ -365,7 +365,7 @@ export default function Speaking() {
           </motion.div>
 
           <motion.div variants={fadeIn} className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-            {speakingCalendar2025.map((engagement) => (
+            {speakingCalendar2026.map((engagement) => (
               <div
                 key={engagement}
                 className="bg-secondary-foreground/5 border border-secondary-foreground/10 p-4 md:p-6 text-center hover:border-accent/40 transition-colors"
