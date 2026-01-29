@@ -52,9 +52,9 @@ const additionalTopics = [
   "Custom Engagements & Projects"
 ];
 
-// 2026 speaking engagements
-const speakingCalendar2026 = [
-  "WorldPride 2025: Human Rights Conference",
+// Notable speaking engagements
+const notableEngagements = [
+  "WorldPride: Human Rights Conference",
   "Annual CIVSA Conference",
   "Vanderbilt University",
   "Penn State (Multiple Campuses)",
@@ -345,7 +345,7 @@ export default function Speaking() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════
-          2026 CALENDAR
+          NOTABLE ENGAGEMENTS
       ═══════════════════════════════════════════════════════════════ */}
       <section className="py-20 md:py-32 px-6 md:px-20 lg:px-32 bg-secondary text-secondary-foreground">
         <motion.div
@@ -357,15 +357,15 @@ export default function Speaking() {
         >
           <motion.div variants={fadeIn} className="text-center mb-16">
             <span className="text-accent text-xs tracking-[0.3em] font-medium uppercase">
-              2026 Speaking Calendar
+              Notable Engagements
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif mt-4 leading-[1.05]">
-              Where I'll be this year<span className="text-primary">.</span>
+              Where she's made an impact<span className="text-primary">.</span>
             </h2>
           </motion.div>
 
           <motion.div variants={fadeIn} className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-            {speakingCalendar2026.map((engagement) => (
+            {notableEngagements.map((engagement) => (
               <div
                 key={engagement}
                 className="bg-secondary-foreground/5 border border-secondary-foreground/10 p-4 md:p-6 text-center hover:border-accent/40 transition-colors"
@@ -378,7 +378,7 @@ export default function Speaking() {
           </motion.div>
 
           <motion.p variants={fadeIn} className="text-center text-secondary-foreground/60 mt-12 text-sm">
-            Plus many more universities and organizations across the country...
+            And many more universities and organizations across the country.
           </motion.p>
         </motion.div>
       </section>
