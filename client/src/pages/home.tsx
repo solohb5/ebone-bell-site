@@ -290,34 +290,44 @@ export default function Home() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════
-          CLIENT LOGOS
+          CLIENT LOGOS — Premium Trust Bar
       ═══════════════════════════════════════════════════════════════ */}
-      <section className="py-20 md:py-32 px-6 md:px-20 lg:px-32 bg-background text-foreground border-y border-border/50">
+      <section className="py-16 md:py-24 px-6 md:px-20 lg:px-32 bg-background text-foreground">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="max-w-6xl mx-auto"
         >
-          <p className="text-center text-[10px] md:text-xs tracking-[0.16em] uppercase text-foreground/35 mb-16 font-semibold">
-            Trusted By Leading Organizations
+          <p className="text-center text-[10px] md:text-xs tracking-[0.2em] uppercase text-foreground/40 mb-12 md:mb-16 font-medium">
+            Trusted By Industry Leaders
           </p>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10 md:gap-14 items-center justify-items-center">
-            {['Microsoft', 'Deloitte', 'Accenture', 'AT&T', 'Edward Jones', 'Charlotte Tilbury'].map((company) => (
-              <div
-                key={company}
-                className="text-foreground/28 hover:text-foreground/50 transition-all duration-320 text-sm md:text-base font-bold tracking-[0.08em] uppercase hover:-translate-y-0.5"
-              >
-                {company}
-              </div>
-            ))}
+          {/* Logo Grid - Real SVG Logos */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 md:gap-12 items-center justify-items-center mb-16">
+            <img src="/logos/microsoft.svg" alt="Microsoft" className="h-6 md:h-7 w-auto opacity-30 hover:opacity-60 transition-opacity duration-300" style={{ filter: 'brightness(0)' }} />
+            <img src="/logos/deloitte.svg" alt="Deloitte" className="h-6 md:h-7 w-auto opacity-30 hover:opacity-60 transition-opacity duration-300" style={{ filter: 'brightness(0)' }} />
+            <img src="/logos/accenture.svg" alt="Accenture" className="h-5 md:h-6 w-auto opacity-30 hover:opacity-60 transition-opacity duration-300" style={{ filter: 'brightness(0)' }} />
+            <img src="/logos/att.svg" alt="AT&T" className="h-7 md:h-8 w-auto opacity-30 hover:opacity-60 transition-opacity duration-300" style={{ filter: 'brightness(0)' }} />
+            <img src="/logos/edward-jones.svg" alt="Edward Jones" className="h-5 md:h-6 w-auto opacity-30 hover:opacity-60 transition-opacity duration-300" style={{ filter: 'brightness(0)' }} />
+            <img src="/logos/charlotte-tilbury.svg" alt="Charlotte Tilbury" className="h-4 md:h-5 w-auto opacity-30 hover:opacity-60 transition-opacity duration-300" style={{ filter: 'brightness(0)' }} />
           </div>
 
-          <div className="mt-16 pt-10 border-t border-border/40">
-            <p className="text-center text-sm md:text-base text-foreground/55 leading-relaxed">
-              <span className="text-foreground font-bold">100+</span> universities including Vanderbilt, Penn State, Kent State, and more
-            </p>
+          {/* Universities */}
+          <div className="pt-10 border-t border-border/30">
+            <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-sm text-foreground/35">
+              <span className="text-foreground/60 font-semibold">100+ Universities</span>
+              <span className="hidden md:inline text-foreground/20">|</span>
+              <span>Vanderbilt</span>
+              <span className="text-foreground/20">·</span>
+              <span>Penn State</span>
+              <span className="text-foreground/20">·</span>
+              <span>Kent State</span>
+              <span className="text-foreground/20">·</span>
+              <span>Rochester Institute of Technology</span>
+              <span className="text-foreground/20">·</span>
+              <span className="text-foreground/50">and more</span>
+            </div>
           </div>
         </motion.div>
       </section>
